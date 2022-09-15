@@ -1,0 +1,58 @@
+html {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: rgb(79, 112, 101);
+    text-align: center;
+}
+
+.results {
+    display: flex;
+}
+
+.display {
+    color: rgb(194, 192, 192);
+    font-size: 10rem;
+}
+
+.timer {
+    color: rgb(197, 195, 195);;
+}
+
+.game-board {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.grid-container {
+    display: grid;
+    max-width: 50rem;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.grid-item {
+    display: flex;
+    border: 1px solid rgb(160, 160, 160);
+    border-radius: 8px;
+}
+
+.image {
+    width: 100%;
+    border-radius: 8px;
+}
+
+#hidden {
+    opacity: 0;
+    display: none;
+    cursor: default;
+}
