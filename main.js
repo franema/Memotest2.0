@@ -15,7 +15,7 @@ function start() {
 
 function disableUserInput() {
     document.querySelectorAll(".image").forEach(function (image) {
-        image.onclick =  () => {
+        image.onclick = () => {
 
         }
     })
@@ -35,7 +35,7 @@ function flipImage(e) {
     manageFlippedImages(image)
 }
 
-function manageFlippedImages (image) {
+function manageFlippedImages(image) {
 
     if (flippedImage === null) {
         flippedImage = image
